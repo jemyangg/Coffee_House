@@ -1,0 +1,285 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    
+
+}
+
+header {
+    background-image: url('Image/bckgrnd.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ecf0f1;
+    text-align: center;
+    font-style: italic;
+    padding: 10em;
+   
+}
+#logo {
+    max-width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+   position:absolute;
+   top: 0;
+   right: -200px;
+   width: 100%;
+   padding: 20px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #282a2b;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+h1{
+    color: #ecf0f1;
+}
+h2 {
+    color: #333;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Additional styles for navigation links */
+nav a:hover {
+    color: #3498db;
+}
+
+/* Styles for customer comments */
+#comments {
+    background-color: #ecf0f1;
+}
+
+/* Styles for about section */
+#about {
+    background-color: #bdc3c7;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    nav {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+}
+
+.menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item {
+    flex: 0 1 calc(30% - 20px);
+    margin-bottom: 30px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu-item h3,
+.menu-item p {
+    color: #333;
+    margin: 10px;
+}
+
+
+@media screen and (width: 200px) {
+    .menu-item {
+        flex: 0 1 calc(20% - 10px);
+    }
+}
+
+/* ... Previous CSS styles ... */
+
+/* Additional styles for comments */
+#comments {
+    text-align: center;
+}
+
+.comment {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease-in-out;
+}
+
+.comment:hover {
+    transform: scale(1.02);
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-text {
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.comment-author {
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive styles for comments */
+@media screen and (max-width: 600px) {
+    .comment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comment img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ... Previous CSS styles ... */
+
+/* Additional styles for the about section */
+#about {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Responsive styles for the about section */
+@media screen and (max-width: 600px) {
+    .about-content {
+        padding: 20px;
+    }
+}
